@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Upload driver and rider datasets for ride-sharing matchmaking">
+  <title>Upload Datasets — Ride-Sharing Matchmaking</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+</head>
+<body class="bg-grid">
+  <main class="container">
+    <div class="glass card upload-card fade-in">
+      <h2 class="neon-sub">📤 Upload Datasets</h2>
+      <p class="muted">Select <code>drivers.json</code> and <code>riders.json</code> to proceed. Both files are required for matchmaking analysis.</p>
+
+      <div class="upload-row">
+        <label class="upload-box" id="driversBox">
+          <div class="upload-icon">🚗</div>
+          <span class="upload-label">Drivers JSON</span>
+          <input id="driversFile" type="file" accept="application/json,.json">
+          <span class="file-name" id="driversFileName">No file selected</span>
+        </label>
+
+        <label class="upload-box" id="ridersBox">
+          <div class="upload-icon">👤</div>
+          <span class="upload-label">Riders JSON</span>
+          <input id="ridersFile" type="file" accept="application/json,.json">
+          <span class="file-name" id="ridersFileName">No file selected</span>
+        </label>
+      </div>
+
+      <div class="info-box">
+        <strong>📋 Expected Format:</strong>
+        <div class="format-example">
+          <code>drivers.json</code>: Array of objects with driver_id, location [lat, lon], vehicle_type, rating, status, traffic_zone<br>
+          <code>riders.json</code>: Array of objects with rider_id, location [lat, lon], preferred_vehicle, urgency
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="uploadBtn" class="btn btn-primary glow" disabled>
+          <span id="btnText">Upload & Process</span>
+          <span id="btnLoader" class="loader" style="display:none">⏳</span>
+        </button>
+        <a class="btn btn-ghost" href="index.html">← Back</a>
+      </div>
+
+      <div id="message" class="message"></div>
+    </div>
+  </main>
+
+  <script src="assets/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+[
+  {
+    "driver_id": 1,
+    "name": "Rajesh Kumar",
+    "location": [12.9716, 77.5946],
+    "vehicle_type": "Sedan",
+    "rating": 4.8,
+    "status": "available",
+    "traffic_zone": "medium"
+  },
+  {
+    "driver_id": 2,
+    "name": "Amit Sharma",
+    "location": [12.9750, 77.5900],
+    "vehicle_type": "Hatchback",
+    "rating": 4.3,
+    "status": "available",
+    "traffic_zone": "low"
+  },
+  {
+    "driver_id": 3,
+    "name": "Priya Singh",
+    "location": [12.9600, 77.6100],
+    "vehicle_type": "SUV",
+    "rating": 4.9,
+    "status": "busy",
+    "traffic_zone": "high"
+  },
+  {
+    "driver_id": 4,
+    "name": "Vikram Reddy",
+    "location": [12.9800, 77.5850],
+    "vehicle_type": "Sedan",
+    "rating": 4.6,
+    "status": "available",
+    "traffic_zone": "low"
+  },
+  {
+    "driver_id": 5,
+    "name": "Sneha Patel",
+    "location": [12.9650, 77.6050],
+    "vehicle_type": "Hatchback",
+    "rating": 4.5,
+    "status": "available",
+    "traffic_zone": "medium"
+  },
+  {
+    "driver_id": 6,
+    "name": "Arjun Verma",
+    "location": [12.9720, 77.5920],
+    "vehicle_type": "SUV",
+    "rating": 4.9,
+    "status": "available",
+    "traffic_zone": "low"
+  },
+  {
+    "driver_id": 7,
+    "name": "Kavya Iyer",
+    "location": [12.9680, 77.6080],
+    "vehicle_type": "Sedan",
+    "rating": 4.7,
+    "status": "available",
+    "traffic_zone": "high"
+  },
+  {
+    "driver_id": 8,
+    "name": "Sanjay Gupta",
+    "location": [12.9770, 77.5880],
+    "vehicle_type": "Luxury",
+    "rating": 5.0,
+    "status": "available",
+    "traffic_zone": "medium"
+  },
+  {
+    "driver_id": 9,
+    "name": "Deepak Rao",
+    "location": [12.9620, 77.6120],
+    "vehicle_type": "Hatchback",
+    "rating": 4.2,
+    "status": "busy",
+    "traffic_zone": "high"
+  },
+  {
+    "driver_id": 10,
+    "name": "Neha Mehta",
+    "location": [12.9790, 77.5910],
+    "vehicle_type": "SUV",
+    "rating": 4.8,
+    "status": "available",
+    "traffic_zone": "low"
+  },
+  {
+    "driver_id": 11,
+    "name": "Rahul Joshi",
+    "location": [12.9700, 77.5980],
+    "vehicle_type": "Sedan",
+    "rating": 4.4,
+    "status": "available",
+    "traffic_zone": "medium"
+  },
+  {
+    "driver_id": 12,
+    "name": "Pooja Nair",
+    "location": [12.9820, 77.5820],
+    "vehicle_type": "Hatchback",
+    "rating": 4.1,
+    "status": "available",
+    "traffic_zone": "low"
+  },
+  {
+    "driver_id": 13,
+    "name": "Karthik Menon",
+    "location": [12.9580, 77.6140],
+    "vehicle_type": "Luxury",
+    "rating": 4.95,
+    "status": "available",
+    "traffic_zone": "high"
+  },
+  {
+    "driver_id": 14,
+    "name": "Anjali Desai",
+    "location": [12.9740, 77.5940],
+    "vehicle_type": "SUV",
+    "rating": 4.7,
+    "status": "available",
+    "traffic_zone": "medium"
+  },
+  {
+    "driver_id": 15,
+    "name": "Manoj Pillai",
+    "location": [12.9810, 77.5870],
+    "vehicle_type": "Sedan",
+    "rating": 4.6,
+    "status": "available",
+    "traffic_zone": "low"
+  }
+]

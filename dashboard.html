@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Analytics dashboard for ride-sharing matchmaking system">
+  <title>Dashboard — Ride-Sharing Matchmaking</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-grid">
+  <main class="container dashboard">
+    <div class="glass topbar fade-in">
+      <h2 class="neon-sub">📊 Dashboard</h2>
+      <div class="top-actions">
+        <button id="exportBtn" class="btn btn-primary">📊 Export to Excel (CSV)</button>
+        <a class="btn btn-ghost" href="https://unhating-tabernacular-arden.ngrok-free.dev/jobs/" target="_blank">⚡ Spark UI</a>
+        <a class="btn btn-ghost" href="upload.html">📤 Upload New</a>
+        <a class="btn btn-ghost" href="index.html">🏠 Home</a>
+      </div>
+    </div>
+
+    <section class="metrics fade-in">
+      <div class="glass metric-card">
+        <div class="metric-icon">🚗</div>
+        <div class="metric-value" id="driverCount">0</div>
+        <div class="metric-label">Total Drivers</div>
+      </div>
+      <div class="glass metric-card">
+        <div class="metric-icon">👤</div>
+        <div class="metric-value" id="riderCount">0</div>
+        <div class="metric-label">Total Riders</div>
+      </div>
+      <div class="glass metric-card">
+        <div class="metric-icon">✓</div>
+        <div class="metric-value" id="matchCount">0</div>
+        <div class="metric-label">Matches Found</div>
+      </div>
+      <div class="glass metric-card">
+        <div class="metric-icon">⭐</div>
+        <div class="metric-value" id="avgRating">0.0</div>
+        <div class="metric-label">Avg Driver Rating</div>
+      </div>
+    </section>
+
+    <section class="cards fade-in">
+      <div class="glass card stats-card">
+        <h3>📈 Drivers vs Riders</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div class="glass card stats-card">
+        <h3>🚙 Vehicle Distribution</h3>
+        <canvas id="pieChart"></canvas>
+      </div>
+    </section>
+
+    <section class="glass card matches-card fade-in">
+      <h3>🎯 Best Driver–Rider Matches</h3>
+      <p class="muted small">Top 3 driver recommendations for each rider based on distance, vehicle preference, rating, traffic zone, and urgency.</p>
+      <div id="matchesList" class="matches-list"></div>
+    </section>
+
+    <!-- New Analytics Sections -->
+    <section class="cards fade-in">
+      <div class="glass card stats-card">
+        <h3>🎯 Match Efficiency</h3>
+        <p class="muted small">Riders who got 1st, 2nd, or 3rd choice driver</p>
+        <canvas id="efficiencyChart"></canvas>
+      </div>
+
+      <div class="glass card stats-card">
+        <h3>📏 Average Ride Distance</h3>
+        <p class="muted small">Average distance per vehicle type</p>
+        <canvas id="distanceChart"></canvas>
+      </div>
+    </section>
+
+    <section class="cards fade-in">
+      <div class="glass card stats-card">
+        <h3>⚡ Urgency Distribution</h3>
+        <p class="muted small">Rider urgency levels breakdown</p>
+        <canvas id="urgencyChart"></canvas>
+      </div>
+
+      <div class="glass card stats-card">
+        <h3>⭐ Driver Ratings Overview</h3>
+        <p class="muted small">Rating distribution across all drivers</p>
+        <canvas id="ratingsChart"></canvas>
+      </div>
+    </section>
+
+    <section class="cards fade-in">
+      <div class="glass card stats-card">
+        <h3>📊 Match Score Distribution</h3>
+        <p class="muted small">Quality scores of all matches</p>
+        <canvas id="scoreChart"></canvas>
+      </div>
+
+      <div class="glass card stats-card">
+        <h3>🚗 Rider Vehicle Preferences</h3>
+        <p class="muted small">Preferred vehicle types</p>
+        <canvas id="preferencesChart"></canvas>
+      </div>
+    </section>
+
+    <section class="glass card matches-card fade-in">
+      <h3>🏆 Top Performing Drivers</h3>
+      <p class="muted small">Drivers with most matches, highest ratings, and shortest average distance</p>
+      <div class="table-container">
+        <table id="topDriversTable" class="data-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Driver ID</th>
+              <th>Name</th>
+              <th>Rating</th>
+              <th>Matches</th>
+              <th>Avg Distance (km)</th>
+              <th>Vehicle</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="glass card matches-card fade-in">
+      <h3>🗺️ Zone-Based Analytics</h3>
+      <p class="muted small">Match density and performance by traffic zone</p>
+      <div id="zoneStats" class="zone-stats"></div>
+    </section>
+  </main>
+
+  <script src="assets/dashboard.js"></script>
+</body>
+</html>

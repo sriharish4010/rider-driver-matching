@@ -1,0 +1,123 @@
+"""
+RIDE-SHARING MATCHMAKING SYSTEM - RUN COMMANDS
+===============================================
+
+STEP 1: START FRONTEND DASHBOARD
+---------------------------------
+Command:
+    python -m http.server 8000
+
+Access:
+    http://localhost:8000
+
+Purpose:
+    - Serves the HTML/CSS/JS frontend
+    - Hosts dashboard with analytics
+    - Provides file upload interface
+
+
+STEP 2: START SPARK BACKEND (Optional - for Spark UI)
+------------------------------------------------------
+Command:
+    python spark_server.py
+
+Access:
+    http://localhost:4040
+
+Purpose:
+    - Runs PySpark matching algorithm
+    - Generates Spark jobs and DAG graphs
+    - Processes driver-rider matching
+    - Displays execution metrics
+
+
+ALTERNATIVE SPARK COMMANDS
+---------------------------
+1. Full processing with analytics:
+    python start_spark.py
+
+2. Simplified backend:
+    python spark_backend.py
+
+
+ACCESSING THE APPLICATION
+--------------------------
+Homepage:
+    http://localhost:8000/index.html
+
+Dashboard:
+    http://localhost:8000/dashboard.html
+
+Spark UI:
+    http://localhost:4040/jobs/
+
+
+STOPPING SERVICES
+-----------------
+Stop HTTP Server:
+    Press Ctrl+C in the http.server terminal
+
+Stop Spark Server:
+    Press Ctrl+C in the spark_server.py terminal
+
+
+TROUBLESHOOTING
+---------------
+Port 8000 busy:
+    netstat -ano | findstr :8000
+    taskkill /F /PID <PID>
+
+Port 4040 busy:
+    netstat -ano | findstr :4040
+    taskkill /F /PID <PID>
+
+
+PROJECT FILES
+-------------
+Frontend:
+    - index.html          Landing page
+    - dashboard.html      Analytics dashboard
+    - assets/styles.css   Rainbow theme
+    - assets/dashboard.js Matching logic
+
+Backend:
+    - spark_server.py     Main Spark server
+    - start_spark.py      Alternative Spark runner
+    - spark_backend.py    Simplified version
+
+Data:
+    - drivers.json        25 drivers dataset
+    - riders.json         18 riders dataset
+    - spark_output/       Generated results
+
+
+FEATURES
+--------
+✅ Rainbow neon gradient theme
+✅ 16 analytics visualizations (charts, tables, cards)
+✅ Haversine distance calculation
+✅ Multi-factor scoring algorithm
+✅ PySpark distributed processing
+✅ Spark UI with DAG visualization
+✅ CSV export functionality
+✅ Real-time matching system
+
+
+SPARK UI TABS
+-------------
+Jobs:     View all completed Spark jobs
+Stages:   Execution stages with task details
+SQL:      DataFrame query plans
+Storage:  Cached RDD information
+Environment: Spark configuration
+
+
+WORKFLOW
+--------
+1. Start HTTP server (port 8000)
+2. Open http://localhost:8000
+3. Click "Upload Dataset" or "View Dashboard"
+4. (Optional) Start Spark backend for live processing
+5. Click "⚡ Spark UI" button to view jobs
+6. Export results as CSV from dashboard
+"""

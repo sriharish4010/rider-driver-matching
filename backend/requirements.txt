@@ -1,0 +1,20 @@
+# PySpark Ride-Sharing Matchmaking Backend
+# Python dependencies
+
+# Core framework
+Flask==3.0.0
+flask-cors==4.0.0
+
+# PySpark - Big Data Processing
+pyspark==3.5.0
+
+# Data handling
+numpy==1.24.3
+pandas==2.0.3
+
+# Optional: for better performance
+pyarrow==14.0.1
+
+# Development tools (optional)
+pytest==7.4.3
+requests==2.31.0

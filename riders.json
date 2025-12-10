@@ -1,0 +1,50 @@
+[
+  {
+    "rider_id": 101,
+    "location": [12.9700, 77.6000],
+    "preferred_vehicle": "Sedan",
+    "urgency": "high"
+  },
+  {
+    "rider_id": 102,
+    "location": [12.9800, 77.5900],
+    "preferred_vehicle": "SUV",
+    "urgency": "medium"
+  },
+  {
+    "rider_id": 103,
+    "location": [12.9650, 77.6050],
+    "preferred_vehicle": "Hatchback",
+    "urgency": "low"
+  },
+  {
+    "rider_id": 104,
+    "location": [12.9780, 77.5880],
+    "preferred_vehicle": "Luxury",
+    "urgency": "high"
+  },
+  {
+    "rider_id": 105,
+    "location": [12.9620, 77.6100],
+    "preferred_vehicle": "Sedan",
+    "urgency": "medium"
+  },
+  {
+    "rider_id": 106,
+    "location": [12.9750, 77.5920],
+    "preferred_vehicle": "SUV",
+    "urgency": "high"
+  },
+  {
+    "rider_id": 107,
+    "location": [12.9690, 77.6020],
+    "preferred_vehicle": "Hatchback",
+    "urgency": "low"
+  },
+  {
+    "rider_id": 108,
+    "location": [12.9820, 77.5850],
+    "preferred_vehicle": "Sedan",
+    "urgency": "medium"
+  }
+]

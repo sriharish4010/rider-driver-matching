@@ -1,0 +1,28 @@
+{
+  "drivers": [
+    {
+      "driver_id": 1,
+      "location": [12.9716, 77.5946],
+      "vehicle_type": "Sedan",
+      "rating": 4.8,
+      "status": "available",
+      "traffic_zone": "medium"
+    },
+    {
+      "driver_id": 2,
+      "location": [12.9750, 77.5900],
+      "vehicle_type": "SUV",
+      "rating": 4.5,
+      "status": "available",
+      "traffic_zone": "low"
+    }
+  ],
+  "riders": [
+    {
+      "rider_id": 101,
+      "location": [12.9700, 77.6000],
+      "preferred_vehicle": "Sedan",
+      "urgency": "high"
+    }
+  ]
+}
